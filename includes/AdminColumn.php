@@ -28,11 +28,19 @@ class AdminColumn
         $this->init_hooks();
     }
 
+    // includes php files
     public function includes()
     {
+        if (file_exists(ADMC_PATH . 'includes/App/CustomAdminColumn.php')) {
+            require_once(ADMC_PATH . 'includes/App/CustomAdminColumn.php');
+        }
+
+        new CustomAdminColumn();
+
 
     }
 
+    // fire up hooks
     public function init_hooks()
     {
         load_plugin_textdomain('admin-column', false, ADMC_PATH . 'i18n/');
