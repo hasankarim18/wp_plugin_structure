@@ -6,10 +6,10 @@ Plugin Name: Admin Column
 Plugin URI: https://example.com/my-plugin.html
 Description: This is a simple plugin that demonstrates how to write a WordPress header for a plugin. It adds functionality to your site with minimal overhead.
 Version: 1.0.0
-Author: Jane Doe
+Author: Hasan
 Author URI: https://example.com/about-me.html
 License: GPL2
-Text Domain: my-plugin
+Text Domain: admin-column
 */
 
 if (!defined('ABSPATH')) {

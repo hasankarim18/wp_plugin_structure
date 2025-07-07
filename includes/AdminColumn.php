@@ -9,7 +9,7 @@ class AdminColumn
     public function init()
     {
         $this->define_constants();
-        add_action('plugin_loaded', [$this, 'init_plugin']);
+        add_action('plugins_loaded', [$this, 'init_plugin']);
     }
 
     public function define_constants()
